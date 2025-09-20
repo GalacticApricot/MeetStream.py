@@ -220,7 +220,3 @@ except requests.exceptions.HTTPError as e:
 3. **Fetch data** → Get transcript, audio, video, chats, screenshots.
 4. **Remove bot** → Call `remove_bot()` once meeting is done.
 
-
-
-Do you want me to also add **badges (PyPI, Python versions, license)** at the top, so it looks like a polished open-source repo README?
-```
