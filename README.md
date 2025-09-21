@@ -1,5 +1,5 @@
 
-# MeetstreamAPI Python Client
+# Unofficial MeetstreamAPI Python Client
 
 The `MeetstreamAPI` class is a lightweight Python client for interacting with the [Meetstream.ai](https://meetstream.ai) API.  
 It allows you to create and manage meeting bots, retrieve transcripts, media, chat messages, participants, and more.
