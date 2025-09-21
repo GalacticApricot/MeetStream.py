@@ -273,6 +273,37 @@ class MeetstreamAPI:
         
         return response.json()
 
+    
+    def create_calendar(
+        self,
+        google_client_id: str,
+        google_client_secret: str,
+        google_refresh_token: str
+    ) -> Dict[str, Any]:
+        """
+        Create a calendar integration using Google OAuth credentials.
+        
+        Args:
+            google_client_id: Google client ID
+            google_client_secret: Google client secret
+            google_refresh_token: Google refresh token
+            
+        Returns:
+            Response from the API with calendar details
+        """
+        url = f"{self.base_url}/api/v1/calendar/create_calendar"
+        
+        payload = {
+            "google_client_id": google_client_id,
+            "google_client_secret": google_client_secret,
+            "google_refresh_token": google_refresh_token
+        }
+        
+        response = self.session.post(url, json=payload)
+        response.raise_for_status()
+        
+        return response.json()
+
 
 # Example usage
 if __name__ == "__main__":
